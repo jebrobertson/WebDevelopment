@@ -1,0 +1,40 @@
+.navContainer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    
+
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    color: aqua;
+}
+
+.navContainer li{
+    flex: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+
+    height: 50px;
+}
+
+.navContainer a{
+    display: inline-block;
+
+    flex: 1;
+    text-decoration: none;
+    background-color: forestgreen;
+    border: 1px solid gray;
+    padding: 20px 10px;
+    text-align: center;
+}
+
+.navContainer a:hover{
+    background-color: papayawhip;
+}
+
+a.active{
+    background-color:aquamarine;
+}
