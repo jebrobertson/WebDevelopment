@@ -1,0 +1,50 @@
+﻿<!--
+  name: Jebediah Robertson
+  pawprint: jsr8d3
+  date: 2/27/19
+ -->
+
+ <!DOCTYPE html>
+ <html lang="en" dir="ltr">
+ <head>
+     <meta charset="utf-8">
+     <title>Challenge 6</title>
+     <link rel="stylesheet" href="editor.css" />
+     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+             integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+             crossorigin="anonymous"></script>
+     <script src="EditorScripts.js"></script>
+     <style id="editableCSS"></style>
+     <link rel="stylesheet" href="../index.css" />
+ </head>
+   <body>
+       <nav>
+           <ul class="navContainer">
+               <li><a href="../Challenge%201/Jsr8d3SettingUp.html">Challenge 1</a> </li>
+               <li><a href="../Challenge%202/Jsr8d3HNavbarBio.html" >Challenge 2</a> </li>
+               <li><a href="../Challenge%203/Jsr8d3Columns.html">Challenge 3</a> </li>
+               <li><a href="../Challenge%204/Jsr8d3Tables.html">Challenge 4</a> </li>
+               <li><a href="../Challenge%206/Jsr8d3Editor.html" class="active">Challenge 6</a> </li>
+               <li><a href="../index.html">Challenge 7</a></li>
+           </ul>
+       </nav>
+       <h1 id="mainHeader">Code Editor</h1>
+       <form class="flexContainer">
+           <div id="textareaWrapper" class="flexChild">
+               <textarea id="htmlTextArea" name="HTMLCode" rows="8" cols="60" placeholder="HTML Code" ondblclick="autoFillHTML()"></textarea>
+               <textarea id="cssTextArea" name="CSSCode" rows="8" cols="60" placeholder="CSS Code" ondblclick="autoFillCSS()"></textarea>
+           </div>
+           <div id="previewDiv" class="flexChild">
+           </div>
+           <div id="buttonWrapper">
+               <input class="buttons" name="HTMLButton" id="HTMLButton" type="button" value="HTML" onclick="populateHTML()" />
+               <span class="tooltip">This button is used to show the result of your HTML code</span>
+               <input class="buttons" name="CSSButton" id="CSSButton" type="button" value="CSS" onClick="toggleCSS()" />
+               <span class="tooltip">This button is used to turn on or off the CSS</span>
+               <input class="buttons" name="eraseButton" id="eraseButton" type="button" value="Erase" onclick="eraseTextAreaContent()" />
+               <span class="tooltip">This button is used to erase your code and reset the preview pane</span>
+           </div>
+       </form>
+       <h4 id="nameHeader" ondblclick="changeTitle()">Jebediah Robertson</h4>
+   </body>
+ </html>

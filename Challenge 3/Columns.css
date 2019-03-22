@@ -1,0 +1,131 @@
+body{
+  font-family: sans-serif;
+
+}
+
+/*refrence for using navbar https://www.w3schools.com/css/css_navbar.asp*/
+
+ul {
+  background-color: gray;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+li  a{
+  display: block;
+  padding: 8px 16px;
+  text-decoration: none;
+  padding: 14px 16px;
+}
+
+.active {
+  background-color: green;
+  color: white;
+}
+
+.active:hover {
+  background-color: yellow;
+}
+
+li a:hover {
+  background-color: yellow;
+}
+/* end refrence for using navbar https://www.w3schools.com/css/css_navbar.asp*/
+
+/*refrence for using float to make columns https://www.w3schools.com/css/css_float.asp*/
+
+.clearHack::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.columns{
+  float: left;
+}
+
+/*end of using https://www.w3schools.com/css/css_float.asp*/
+
+.header{
+  text-align: center;
+}
+
+.rows{
+  width: 378px;
+  height: 155px;
+  padding: 20px;
+  border: 10px outset yellow;
+  border-radius: 15px;
+
+  background-color: #800000;
+  color: yellow;
+}
+
+#topRow{
+  margin-bottom: 30px;
+}
+
+#MainWrapper{
+  width: 1090px;
+  border: 10px outset green;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 20px;
+  background-color: gray;
+  animation-name: filling;
+  animation-duration: 10s;
+}
+
+@keyframes filling {
+
+  0% {background-color: gray;}
+  10% {background-image: linear-gradient(blue 10%, gray);}
+  20% {background-image: linear-gradient(blue 20%, gray);}
+  30% {background-image: linear-gradient(blue 30%, gray);}
+  40% {background-image: linear-gradient(blue 40%, gray);}
+  50% {background-image: linear-gradient(blue 50%, gray);}
+  60% {background-image: linear-gradient(blue 60%, gray);}
+  70% {background-image: linear-gradient(blue 70%, gray);}
+  80% {background-image: linear-gradient(blue 80%, gray);}
+  90% {background-image: linear-gradient(blue 90%, gray);}
+  100% {background-color: blue;}
+}
+
+#RightColumn{
+  padding: 20px;
+  margin: 20px;
+  height: 400px;
+  border: 10px outset blue;
+  border-radius: 7px;
+
+  width: 187px;
+
+  background-color: powderblue;
+}
+
+div div p{
+  color: gray;
+}
+
+#RowWrapper{
+  width: 438px;
+  margin: 20px;
+
+}
+
+#LeftColumn{
+  padding: 20px;
+  margin: 20px;
+  height: 400px;
+  border: 10px outset blue;
+  border-radius: 7px;
+  width: 225px;
+
+  background-color: powderblue;
+}

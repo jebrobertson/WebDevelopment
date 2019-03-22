@@ -1,0 +1,85 @@
+﻿<!--
+  Name: Jebediah Robertson
+  Pawprint: jsr8d3
+  Date: 2/8/19
+  Challenge 3: Multi-Column Layout
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>
+        Challenge 3
+    </title>
+    <link rel="stylesheet" href="Columns.css">
+    <link rel="stylesheet" href="../index.css" />
+</head>
+  <body>
+      <!--Navbar /*refrence for using navbar https://www.w3schools.com/css/css_navbar.asp*/-->
+      <nav>
+          <ul class="navContainer">
+              <li><a href="../Challenge%201/Jsr8d3SettingUp.html">Challenge 1</a> </li>
+              <li><a href="../Challenge%202/Jsr8d3HNavbarBio.html">Challenge 2</a> </li>
+              <li><a href="../Challenge%203/Jsr8d3Columns.html" class="active">Challenge 3</a> </li>
+              <li><a href="../Challenge%204/Jsr8d3Tables.html">Challenge 4</a> </li>
+              <li><a href="../Challenge%206/Jsr8d3Editor.html">Challenge 6</a> </li>
+              <li><a href="../index.html">Challenge 7</a></li>
+          </ul>
+      </nav>
+      <!-- End NavBar -->
+
+      <div id="MainWrapper" class="clearHack">
+          <h2 class="header">CS/IT 2830 - Multi-Column Layout</h2>
+
+          <div id="LeftColumn" class="columns">
+              <p>
+                  Web development broadly refers to the tasks associated with
+                  developing websites for hosting via intranet or internet. The web
+                  development process includes web design, web content development,
+                  client-side/server-side scripting and network security configuration,
+                  among other tasks
+                  <br><br>
+                  Definition from <a href="https://www.techopedia.com/definition/23889/web-development">techopedia</a>
+              </p>
+          </div>
+
+          <div id="RowWrapper" class="columns">
+              <!--refrence for calculation https://www.w3schools.com/Css/css_boxmodel.asp-->
+              <!--Calculate left column-->
+              <div class="rows" id="topRow">
+                  Left Column Physical Width<br><br>
+                  225px (width)<br>
+                  + 40px (left 20px + right 20px)<br>
+                  + 20px (left 10px + right 10px)<br>
+                  + 40px (left 20px + right 20px)<br>
+                  ------------------------------------------<br>
+                  = 325px
+              </div>
+              <!--Calculate right column-->
+              <div class="rows">
+                  Right Column Physical Width<br><br>
+                  187px (width)<br>
+                  + 40px (left 20px + right 20px)<br>
+                  + 20px (left 10px + right 10px)<br>
+                  + 40px (left 20px + right 20px)<br>
+                  ------------------------------------------<br>
+                  = 287px
+              </div>
+          </div>
+
+          <div id="RightColumn" class="columns">
+              <p>
+                  Content width is the width that the element's content takes up in the
+                  page. This is the amount of width that its children and content have.
+                  Physical width is the total width the element takes on the web page. This
+                  includes content width and also it's margin, border, and padding. It is the
+                  total width it takes to display the element in its entirety.
+              </p>
+          </div>
+
+      </div>
+      <h3 class="header">
+          Created By: Jebediah Robertson
+      </h3>
+  </body>
+</html>

@@ -1,0 +1,124 @@
+body {
+  background-color: gray;
+}
+
+table#Showtimes{
+  width: 100%;
+  font-family: Arial, Helvetica, Sans-serif;
+  table-layout: fixed;
+  empty-cells: show;
+}
+
+table, td, th {
+  border: 4px solid black;
+  border-collapse: collapse;
+}
+
+.RedHighlight{
+  background-color: red;
+}
+
+td img {
+  height: 200px;
+}
+
+
+/*Since the each row is actually 4 rows needs to grab all for alternating rows*/
+table#Showtimes tr:nth-child(8n+4), table#Showtimes tr:nth-child(8n+5),
+ table#Showtimes tr:nth-child(8n+6), table#Showtimes tr:nth-child(8n+7){
+  background-color: gainsboro;
+}
+/*Since the each row is actually 4 rows needs to grab all for alternating rows*/
+table#Showtimes tr:nth-child(8n+8), table#Showtimes tr:nth-child(8n+9),
+table#Showtimes tr:nth-child(8n+10), table#Showtimes tr:nth-child(8n+11){
+  background-color: white;
+}
+
+/*Covers all the odd rows. Need to make a few exceptions because the movie times causes a few desired rows to be even*/
+table#Showtimes td:nth-child(-n+6):nth-child(odd), td:last-child:nth-child(2), td:nth-last-child(2){
+  text-align: center;
+}
+
+@font-face{
+  font-family: "Permanent Marker";
+  src: url("PermanentMarker-Regular.ttf");
+}
+
+#Showtimes th{
+  background-color: powderblue;
+  color: grey;
+  font-family: "Permanent Marker", Cursive, Arial;
+}
+
+#MovieHeader{
+  font-size: 3em;
+}
+
+#DateHeader{
+  font-size: 2em;
+}
+
+#ColumnHeads{
+  text-align: center;
+  background-color: teal;
+  color: gray;
+}
+
+#Container{
+  width: 80%;
+  box-shadow: 5px 10px 20px black;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: green;
+  border: 2px solid lime;
+  color: powderblue;
+}
+
+#Container img, #Container div{
+  float: left;
+}
+
+#Container img{
+  height: 300px;
+  width: 20%;
+  border: 1px solid black;
+  margin: 10px;
+}
+#InformationDiv{
+  height: 300px;
+  width: 40%;
+  margin-top: 10px;
+  font-family: monospace;
+  font-size: 1.5em;
+  text-align: left;
+  position: relative;
+}
+
+#TimeInformationDiv ul{
+  list-style-position: inside;
+}
+
+#InformationDiv p{
+  margin: 0;
+  position: absolute;
+  bottom: 0;
+}
+
+hr{
+  width: 75%;
+}
+
+#TimeInformationDiv{
+  width: 35%;
+  font-family: monospace;
+  font-size: 1.5em;
+  margin-top: 10px;
+  text-align: right;
+}
+
+.clearHack::after {
+  content: "";
+  clear: both;
+  display: table;
+}

@@ -1,0 +1,111 @@
+﻿<!--
+  name: Jebediah Robertson
+  pawprint: Jsr8d3
+  date: 2/15/19
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>
+        Challenge 3
+    </title>
+    <link rel="stylesheet" href="Tables.css" />
+    <link rel="stylesheet" href="../index.css" />
+</head>
+
+<body>
+    <nav>
+        <ul class="navContainer">
+            <li><a href="../Challenge%201/Jsr8d3SettingUp.html">Challenge 1</a> </li>
+            <li><a href="../Challenge%202/Jsr8d3HNavbarBio.html">Challenge 2</a> </li>
+            <li><a href="../Challenge%203/Jsr8d3Columns.html">Challenge 3</a> </li>
+            <li><a href="../Challenge%204/Jsr8d3Tables.html" class="active">Challenge 4</a> </li>
+            <li><a href="../Challenge%206/Jsr8d3Editor.html">Challenge 6</a> </li>
+            <li><a href="../index.html">Challenge 7</a></li>
+        </ul>
+    </nav>
+    <!--Use HTMLTables.pdf for creating the table and the colspan and rowspan-->
+    <table id="Showtimes">
+        <tr>
+            <th colspan="7" id="MovieHeader">Movie Theater Showtimes</th>
+        </tr>
+        <tr>
+            <th colspan="7" id="DateHeader">February 15th 2019</th>
+        </tr>
+        <tr id="ColumnHeads">
+            <td>Poster</td>
+            <td>Movie</td>
+            <td>Rating</td>
+            <td>Length</td>
+            <td colspan="2">Showtimes</td>
+            <td>Amenities</td>
+        </tr>
+        <tr>
+            <td rowspan="4"><img src="lego.jpg" alt="Lego Movie" /></td>
+            <td rowspan="4">The Lego Movie 2</td>
+            <td rowspan="4">PG</td>
+            <td rowspan="4">106 mins</td>
+            <td class="RedHighlight">4:05 PM</td>
+            <td class="RedHighlight">4:30 PM</td>
+            <td rowspan="4">Closed Caption<br>Descriptive Video<br>No Passes<br>Stadium Seating</td>
+        </tr>
+        <tr>
+            <td>6:40 PM</td>
+            <td>7:10 PM</td>
+        </tr>
+        <tr>
+            <td>9:25 PM</td>
+            <td>3D 9:50 PM</td>
+        </tr>
+        <tr>
+            <td>--</td>
+            <td>--</td>
+        </tr>
+
+        <tr>
+            <td rowspan="4"><img src="spiderman.jpg" alt="SpiderMan Movie" /></td>
+            <td rowspan="4">Spider-Man: Into the Spider-Verse</td>
+            <td rowspan="4">PG</td>
+            <td rowspan="4">116 mins</td>
+            <td class="RedHighlight" colspan="2">3:25 PM</td>
+            <td rowspan="4">Closed Caption<br>Descriptive Video<br>Stadium Seating</td>
+        </tr>
+        <tr>
+            <td colspan="2">9:35 PM</td>
+        </tr>
+        <tr>
+            <td colspan="2">--</td>
+        </tr>
+        <tr>
+            <td colspan="2">--</td>
+        </tr>
+    </table>
+
+    <div id="Container" class="clearHack">
+        <img src="lego.jpg" alt="Lego Movie" />
+        <div id="InformationDiv">
+            The Lego Movie 2
+            <hr>
+            PG | 1 hr. 46 min.
+            <p>
+                CC, DV, NP, SS
+            </p>
+        </div>
+        <div id="TimeInformationDiv">
+            Viewing Times
+            <hr>
+            <ul>
+                <li>4:05 PM</li>
+                <li>4:30 PM</li>
+                <li>6:40 PM</li>
+                <li>7:10 PM</li>
+                <li>9:25 PM</li>
+                <li>3D 9:50 PM</li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
