@@ -1,3 +1,8 @@
+<!--
+	name: Jebediah Robertson
+	pawprint: jsr8d3
+	date: 4/4/19
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,10 +26,21 @@
 
 <?php
 include 'functions.php';
+
+if(!isset($_GET['myFunction'])){
+	 echo "<h1>Welcome to my first php app</h1>";
+	 exit();
+}
+
 $fun = $_GET['myFunction'];
 if(strcmp($fun, "sayHi") == 0){
  echo "<h1>You are using function:sayHi</h1>";
- sayHi($_GET['myName']);
+ if(isset($_GET['myName']))
+	sayHi($_GET['myName']);
+ else 
+	echo "<p>sayHi needs the value 'myName' set<p>";
+}
+
 }
 else if(strcmp($fun, "showPic") == 0){
  echo "<h1>You are using function:showPic</h1>";
@@ -36,15 +52,28 @@ else if(strcmp($fun, "showList") == 0){
 }
 else if(strcmp($fun, "hammingNumbers") == 0){
  echo "<h1>You are using function:hammingNumbers</h1>";
- hamming($_GET['x']);
+  if(isset($_GET['x']))
+	hamming($_GET['x']);
+ else 
+	echo "<p>hammingNumbers needs the value 'x' set<p>";
+ 
 }
 else if(strcmp($fun, "hammingSequence") == 0){
  echo "<h1>You are using function:hammingSeq</h1>";
- hammingSequence($_GET['y']);
+ if(isset($_GET['y']))
+	hammingSequence($_GET['y']);
+ else
+	echo "<p>hammingSequence needs the value 'y' set<p>";
+}
+
 }
 else if(strcmp($fun, "anagram") == 0){
  echo "<h1>You are using function:Anagram</h1>";
  anagram($_GET['a'], $_GET['b']);
+ if(isset($_GET['a']) && isset$_GET['b'])
+	anagram($_GET['a'], $_GET['b']););
+ else
+	echo "<p>anagram needs the value 'a' and 'b' set<p>";
 }
 else {
  echo "<h1>Welcome to my first php app</h1>";
