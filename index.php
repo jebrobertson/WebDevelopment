@@ -41,7 +41,7 @@ if(strcmp($fun, "sayHi") == 0){
 	echo "<p>sayHi needs the value 'myName' set<p>";
 }
 
-}
+
 else if(strcmp($fun, "showPic") == 0){
  echo "<h1>You are using function:showPic</h1>";
  showPic();
@@ -66,12 +66,11 @@ else if(strcmp($fun, "hammingSequence") == 0){
 	echo "<p>hammingSequence needs the value 'y' set<p>";
 }
 
-}
+
 else if(strcmp($fun, "anagram") == 0){
  echo "<h1>You are using function:Anagram</h1>";
- anagram($_GET['a'], $_GET['b']);
- if(isset($_GET['a']) && isset$_GET['b'])
-	anagram($_GET['a'], $_GET['b']););
+ if(isset($_GET['a']) && isset($_GET['b']))
+	anagram($_GET['a'], $_GET['b']);
  else
 	echo "<p>anagram needs the value 'a' and 'b' set<p>";
 }
