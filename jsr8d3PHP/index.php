@@ -19,7 +19,7 @@
             <li><a href="Challenge%203/Jsr8d3Columns.html">Challenge 3</a> </li>
             <li><a href="Challenge%204/Jsr8d3Tables.html">Challenge 4</a> </li>
             <li><a href="Challenge%206/Jsr8d3Editor.html">Challenge 6</a> </li>
-            <li><a href="/Challenge%207/index.html">Challenge 7</a></li>
+            <li><a href="/Challenge 7/index.html">Challenge 7</a></li>
 			<li><a href="../index.php" class="active">Challenge 8</a></li>
 		</ul>
 </nav>
@@ -41,7 +41,7 @@ if(strcmp($fun, "sayHi") == 0){
 	echo "<p>sayHi needs the value 'myName' set<p>";
 }
 
-}
+
 else if(strcmp($fun, "showPic") == 0){
  echo "<h1>You are using function:showPic</h1>";
  showPic();
@@ -66,12 +66,11 @@ else if(strcmp($fun, "hammingSequence") == 0){
 	echo "<p>hammingSequence needs the value 'y' set<p>";
 }
 
-}
+
 else if(strcmp($fun, "anagram") == 0){
  echo "<h1>You are using function:Anagram</h1>";
- anagram($_GET['a'], $_GET['b']);
- if(isset($_GET['a']) && isset$_GET['b'])
-	anagram($_GET['a'], $_GET['b']););
+ if(isset($_GET['a']) && isset($_GET['b']))
+	anagram($_GET['a'], $_GET['b']);
  else
 	echo "<p>anagram needs the value 'a' and 'b' set<p>";
 }
